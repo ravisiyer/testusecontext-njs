@@ -1,4 +1,3 @@
-// import EditLanguageId from "./editlanguageid";
 import Link from "next/link";
 import LanguageId from "./languageid";
 
@@ -10,7 +9,6 @@ export default function Home() {
       <Link href="/editlanguageid" className="underline">
         Edit languageId
       </Link>
-      {/* <EditLanguageId /> */}
     </main>
   );
 }

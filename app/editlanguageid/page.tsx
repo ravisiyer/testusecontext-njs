@@ -11,9 +11,6 @@ function Page() {
 
   const { replace } = useRouter();
 
-  // const languageId = AppSettings.languageId;
-  // const setLanguageId = AppSettings.setLanguageId;
-
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     AppSettings.setLanguageId(formLanguageId);
@@ -39,7 +36,6 @@ function Page() {
         type="submit"
         value="Set"
         className="px-1 ml-1 leading-normal  text-black md:text-lg  bg-orange-400 rounded-md cursor-pointer hover:text-black hover:bg-violet-50 active:scale-90 "
-        // onSubmit={(e) => console.log(e)}
       />
     </form>
   );
