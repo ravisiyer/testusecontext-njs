@@ -1,9 +1,9 @@
 "use client";
-import { getAppSettings } from "./getappsettings";
+import { getAppSettings } from "./provider";
 
 function LanguageId() {
   const appSettings = getAppSettings();
 
-  return <p>LanguageId: {appSettings.languageId}</p>;
+  return <p>languageId: {appSettings.languageId}</p>;
 }
 export default LanguageId;
