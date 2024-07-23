@@ -1,17 +1,16 @@
-// "use client";
-// import { getAppSettings } from "./getappsettings";
-import LanguageId from "./LanguageId";
+// import EditLanguageId from "./editlanguageid";
+import Link from "next/link";
+import LanguageId from "./languageid";
 
 export default function Home() {
-  // const AppSettings = getAppSettings();
-  // const languageId = AppSettings.languageId;
-  // const setLanguageId = AppSettings.setLanguageId;
-  // setLanguageId(10);
   return (
     <main className="p-6">
       <p>Hi there!</p>
       <LanguageId />
-      {/* <p>{`languageId = ${languageId}`}</p> */}
+      <Link href="/editlanguageid" className="underline">
+        Edit languageId
+      </Link>
+      {/* <EditLanguageId /> */}
     </main>
   );
 }
